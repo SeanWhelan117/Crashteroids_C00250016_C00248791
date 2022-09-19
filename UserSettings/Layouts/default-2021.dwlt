@@ -97,7 +97,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 121}
   m_MaxSize: {x: 4000, y: 4021}
   vertical: 0
-  controlID: 182
+  controlID: 93
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 111
+  controlID: 125
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,8 +142,8 @@ MonoBehaviour:
     y: 0
     width: 455
     height: 948
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -168,8 +168,8 @@ MonoBehaviour:
     y: 0
     width: 361
     height: 561.5
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 99
+  controlID: 130
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 100
+  controlID: 131
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -342,8 +342,8 @@ MonoBehaviour:
     y: 0
     width: 1104
     height: 561.5
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 19}
@@ -379,7 +379,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 253
+    ID: 160
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -411,7 +411,7 @@ MonoBehaviour:
       name: UnityUnitTestingTutorial
       fullName: UnityUnitTestingTutorial
       resultStatus: 1
-      duration: 0.34038
+      duration: 0.3669585
       messages: 
       output: 
       stacktrace: 
@@ -427,7 +427,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/gameuser/Desktop/sprint3/Crashteroids_C00250016_C00248791/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.2577019
+      duration: 0.2914185
       messages: 
       output: 
       stacktrace: 
@@ -443,7 +443,7 @@ MonoBehaviour:
       name: TestSuite
       fullName: TestSuite
       resultStatus: 1
-      duration: 0.2516116
+      duration: 0.28463
       messages: 
       output: 
       stacktrace: 
@@ -556,12 +556,29 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1013
       parentUniqueId: Tests.dll/[Tests][TestSuite][suite]
-    m_ResultText: DestroyedAsteroidRaisesScore (0.239s)
+    - id: 1008
+      uniqueId: Tests.dll/TestSuite/[Tests][TestSuite.StartNewSetsScoreZero]
+      name: StartNewSetsScoreZero
+      fullName: TestSuite.StartNewSetsScoreZero
+      resultStatus: 1
+      duration: 0.2684568
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][TestSuite][suite]
+    m_ResultText: StartNewSetsScoreZero (0.268s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ff86a56c
-      m_LastClickedID: 1822787327
+      m_SelectedIDs: db1e8dd7
+      m_LastClickedID: -678617381
       m_ExpandedIDs: 4dad7d13f960e07145dca17bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -682,22 +699,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/RW/Tests
+    - Assets/RW
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/RW/Tests
+  - Assets/RW
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\gameuser\Desktop\sprint3\Crashteroids_C00250016_C00248791
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8a4d0000
-    m_LastClickedID: 19850
-    m_ExpandedIDs: 000000004c4d00005a4d000000ca9a3bffffff7f
+    m_SelectedIDs: 564d0000
+    m_LastClickedID: 19798
+    m_ExpandedIDs: 00000000444d0000564d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -725,7 +742,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c4d0000
+    m_ExpandedIDs: 00000000444d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -857,7 +874,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c6eaffff08ebffff0aedffff98eeffffdaeeffffdcf0ffffdaf2ffff1cf3ffff3ef7ffff6ef8ffff28fbffff
+      m_ExpandedIDs: 62f2ffffa4f2ffff7af4ffff10f6ffff52f6ffff36f8ffff30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

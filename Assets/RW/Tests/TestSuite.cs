@@ -97,4 +97,18 @@ public class TestSuite
         Assert.AreEqual(game.score, 1);
     }
 
+    [UnityTest]
+    public IEnumerator StartNewSetsScoreZero()
+    {
+        // 1
+        game.score = 99;
+        game.isGameOver = true;
+        game.NewGame();
+
+        yield return new WaitForSeconds(0.1f);
+        // 2
+        Assert.AreEqual(game.score, 0);
+    }
+
+
 }
