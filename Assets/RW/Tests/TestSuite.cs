@@ -105,9 +105,29 @@ public class TestSuite
         game.isGameOver = true;
         game.NewGame();
 
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.01f);
         // 2
         Assert.AreEqual(game.score, 0);
+    }
+
+    [UnityTest]
+    public IEnumerator MoveLeftAndRight()
+    {
+        // 1
+        Ship ship = game.GetShip();
+        // 2
+        float initialXPos = ship.transform.position.x;
+        ship.MoveRight();
+        yield return new WaitForSeconds(0.1f);
+        // 3
+        Assert.Greater(ship.transform.position.x, initialXPos); // Move Right Works
+
+        // 4
+        initialXPos = ship.transform.position.x;
+        ship.MoveLeft();
+        yield return new WaitForSeconds(0.1f);
+        // 5
+        Assert.Greater(initialXPos, ship.transform.position.x); // Move Left Works
     }
 
 
