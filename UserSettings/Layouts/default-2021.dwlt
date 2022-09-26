@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2194.286
     height: 1152
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 111
+  controlID: 30
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -68,14 +68,14 @@ MonoBehaviour:
     y: 0
     width: 519.9999
     height: 1102
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 99
+  controlID: 31
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 100
+  controlID: 32
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,14 +299,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1674.2858
     y: 72.571434
-    width: 519.0001
+    width: 518.9999
     height: 1081
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 138
+    ID: 302
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -338,7 +338,7 @@ MonoBehaviour:
       name: UnityUnitTestingTutorial
       fullName: UnityUnitTestingTutorial
       resultStatus: 1
-      duration: 0.9877195
+      duration: 1.3731319
       messages: 
       output: 
       stacktrace: 
@@ -353,8 +353,8 @@ MonoBehaviour:
       uniqueId: '[Tests][C:/Users/gameuser/Desktop/Crashteroids_C00250016_C00248791/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/gameuser/Desktop/Crashteroids_C00250016_C00248791/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 1.198238
       messages: 
       output: 
       stacktrace: 
@@ -370,7 +370,7 @@ MonoBehaviour:
       name: TestSuite
       fullName: TestSuite
       resultStatus: 1
-      duration: 0.9075746
+      duration: 1.1899312
       messages: 
       output: 
       stacktrace: 
@@ -386,7 +386,7 @@ MonoBehaviour:
       name: AsteroidsMoveDown
       fullName: TestSuite.AsteroidsMoveDown
       resultStatus: 1
-      duration: 0.1779429
+      duration: 0.2241594
       messages: 
       output: 
       stacktrace: 
@@ -403,7 +403,7 @@ MonoBehaviour:
       name: DestroyedAsteroidRaisesScore
       fullName: TestSuite.DestroyedAsteroidRaisesScore
       resultStatus: 1
-      duration: 0.1139503
+      duration: 0.1233789
       messages: 
       output: 
       stacktrace: 
@@ -420,7 +420,7 @@ MonoBehaviour:
       name: GameOverOccursOnAsteroidCollision
       fullName: TestSuite.GameOverOccursOnAsteroidCollision
       resultStatus: 1
-      duration: 0.1170688
+      duration: 0.1185592
       messages: 
       output: 
       stacktrace: 
@@ -437,7 +437,7 @@ MonoBehaviour:
       name: LaserDestroysAsteroid
       fullName: TestSuite.LaserDestroysAsteroid
       resultStatus: 1
-      duration: 0.1153572
+      duration: 0.1162484
       messages: 
       output: 
       stacktrace: 
@@ -454,7 +454,7 @@ MonoBehaviour:
       name: LaserMovesUp
       fullName: TestSuite.LaserMovesUp
       resultStatus: 1
-      duration: 0.11556
+      duration: 0.1136475
       messages: 
       output: 
       stacktrace: 
@@ -471,7 +471,7 @@ MonoBehaviour:
       name: MoveLeftAndRight
       fullName: TestSuite.MoveLeftAndRight
       resultStatus: 1
-      duration: 0.2165507
+      duration: 0.2184907
       messages: 
       output: 
       stacktrace: 
@@ -483,12 +483,29 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1005
       parentUniqueId: Tests.dll/[Tests][TestSuite][suite]
+    - id: 1010
+      uniqueId: Tests.dll/TestSuite/[Tests][TestSuite.MoveUpAndDown]
+      name: MoveUpAndDown
+      fullName: TestSuite.MoveUpAndDown
+      resultStatus: 1
+      duration: 0.2172289
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][TestSuite][suite]
     - id: 1008
       uniqueId: Tests.dll/TestSuite/[Tests][TestSuite.NewGameRestartsGame]
       name: NewGameRestartsGame
       fullName: TestSuite.NewGameRestartsGame
       resultStatus: 1
-      duration: 0.0150748
+      duration: 0.0143707
       messages: 
       output: 
       stacktrace: 
@@ -505,7 +522,7 @@ MonoBehaviour:
       name: StartNewSetsScoreZero
       fullName: TestSuite.StartNewSetsScoreZero
       resultStatus: 1
-      duration: 0.0238326
+      duration: 0.0227484
       messages: 
       output: 
       stacktrace: 
@@ -517,13 +534,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1005
       parentUniqueId: Tests.dll/[Tests][TestSuite][suite]
-    m_ResultText: StartNewSetsScoreZero (0.024s)
+    m_ResultText: StartNewSetsScoreZero (0.023s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: db1e8dd7
       m_LastClickedID: -678617381
-      m_ExpandedIDs: 91df9a0f4dad7d1345dca17bffffff7f
+      m_ExpandedIDs: 91df9a0f4dad7d130712064b45dca17bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -643,22 +660,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/RW/Scripts
+    - Assets/RW/Tests
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/RW/Scripts
+  - Assets/RW/Tests
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\gameuser\Desktop\Crashteroids_C00250016_C00248791
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 644d0000
-    m_LastClickedID: 19812
-    m_ExpandedIDs: 00000000424d0000484d000000ca9a3bffffff7f
+    m_SelectedIDs: 7a4d0000
+    m_LastClickedID: 19834
+    m_ExpandedIDs: 00000000424d0000564d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -713,7 +730,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -818,7 +835,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 30fbffff
+      m_ExpandedIDs: c8edffff10eefffff8f5ffff2efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -876,8 +893,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -98.85718, y: -26.285706}
+      snapOffset: {x: -101, y: -26.285706}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -1243,7 +1260,7 @@ MonoBehaviour:
       y: 21
       width: 1259.7144
       height: 610.5714
-    m_Scale: {x: 0.4946759, y: 0.4946759}
+    m_Scale: {x: 0.49467587, y: 0.4946759}
     m_Translation: {x: 629.8572, y: 305.2857}
     m_MarginLeft: 0
     m_MarginRight: 0

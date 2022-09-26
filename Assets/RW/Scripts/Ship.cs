@@ -64,14 +64,22 @@ public class Ship : MonoBehaviour
             ShootLaser();
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (transform.position.x > maxLeft)
         {
-            MoveLeft();
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                MoveLeft();
+            }
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+
+        if (transform.position.x < maxRight)
         {
-            MoveRight();
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                MoveRight();
+            }
+            
         }
 
         if (transform.position.y < top)
@@ -117,10 +125,7 @@ public class Ship : MonoBehaviour
     public void MoveLeft()
     {
         transform.Translate(-Vector3.left * Time.deltaTime * speed);
-        if (transform.position.x < maxLeft)
-        {
-            transform.position = new Vector3(maxLeft, -3.22f, 0);
-        }
+       
     }
 
     public void MoveUp()
@@ -138,10 +143,7 @@ public class Ship : MonoBehaviour
     public void MoveRight()
     {
         transform.Translate(-Vector3.right * Time.deltaTime * speed);
-        if (transform.position.x > maxRight)
-        {
-             transform.position = new Vector3(maxRight, -3.22f, 0);
-        }
+        
     }
 
     public void Explode()
