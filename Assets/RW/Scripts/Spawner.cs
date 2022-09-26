@@ -36,6 +36,8 @@ public class Spawner : MonoBehaviour
 {
     public List<GameObject> asteroids = new List<GameObject>();
 
+    public List<GameObject> powerUps = new List<GameObject>();
+
     [SerializeField]
     private GameObject asteroid1;
     [SerializeField]
@@ -44,10 +46,13 @@ public class Spawner : MonoBehaviour
     private GameObject asteroid3;
     [SerializeField]
     private GameObject asteroid4;
+    [SerializeField]
+    private GameObject powerUp1;
 
     public void BeginSpawning()
     {
         StartCoroutine("Spawn");
+        StartCoroutine("PowerUpSpawnLoop");
     }
 
     IEnumerator Spawn()
@@ -56,6 +61,31 @@ public class Spawner : MonoBehaviour
 
         SpawnAsteroid();
         StartCoroutine("Spawn");
+    }
+
+    IEnumerator PowerUpSpawnLoop()
+    {
+        yield return new WaitForSeconds(5.0f);
+
+        SpawnPowerUp();
+        StartCoroutine("PowerUpSpawnLoop");
+    }
+
+    public GameObject SpawnPowerUp()
+    {
+        GameObject powerUp;
+
+        powerUp = Instantiate(powerUp1);
+
+        powerUp.SetActive(true);
+        float xPos = Random.Range(-8.0f, 8.0f);
+
+        // Spawn asteroid just above top of screen at a random point along x-axis
+        powerUp.transform.position = new Vector3(xPos, 7.35f, 0);
+
+        powerUps.Add(powerUp);
+
+        return powerUp;
     }
 
     public GameObject SpawnAsteroid()
@@ -105,5 +135,6 @@ public class Spawner : MonoBehaviour
     public void StopSpawning()
     {
         StopCoroutine("Spawn");
+        StopCoroutine("PowerUpSpawnLoop");
     }
 }
