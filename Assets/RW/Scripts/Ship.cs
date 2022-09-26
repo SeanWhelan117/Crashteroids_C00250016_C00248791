@@ -49,8 +49,8 @@ public class Ship : MonoBehaviour
 
     private float maxLeft = -8;
     private float maxRight = 8;
-    private float bottom = -4;
-    private float top = 5;
+    public float bottom = -4;
+    public float top = 5;
 
     private void Update()
     {
@@ -63,23 +63,23 @@ public class Ship : MonoBehaviour
         {
             ShootLaser();
         }
-
         if (transform.position.x > maxLeft)
         {
+
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 MoveLeft();
             }
         }
 
-
-        if (transform.position.x < maxRight)
+        if(transform.position.x<maxRight)
         {
+
+        
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                MoveRight();
-            }
-            
+              MoveRight();
+             }
         }
 
         if (transform.position.y < top)
@@ -125,25 +125,38 @@ public class Ship : MonoBehaviour
     public void MoveLeft()
     {
         transform.Translate(-Vector3.left * Time.deltaTime * speed);
-       
+        if (transform.position.x < maxLeft)
+        {
+            transform.position = new Vector3(maxLeft, transform.position.y, 0);
+        }
     }
 
     public void MoveUp()
     {
         transform.Translate(-Vector3.forward * Time.deltaTime * speed);
-        
+        if (transform.position.y > top)
+        {
+            transform.position = new Vector3(transform.position.x, top, 0);
+        }
+
     }
 
     public void MoveDown()
     {
         transform.Translate(-Vector3.back * Time.deltaTime * speed);
-      
+        if (transform.position.y < bottom)
+        {
+            transform.position = new Vector3(transform.position.x, bottom, 0);
+        }
     }
 
     public void MoveRight()
     {
         transform.Translate(-Vector3.right * Time.deltaTime * speed);
-        
+        if (transform.position.x > maxRight)
+        {
+             transform.position = new Vector3(maxRight, transform.position.y, 0);
+        }
     }
 
     public void Explode()
