@@ -130,5 +130,28 @@ public class TestSuite
         Assert.Greater(initialXPos, ship.transform.position.x); // Move Left Works
     }
 
+    [UnityTest]
+
+    public IEnumerator MoveUpAndDown()
+    {
+
+        Ship ship = game.GetShip();
+
+        float initialYPosition = ship.transform.position.y;
+
+        ship.MoveUp();
+        yield return new WaitForSeconds(0.1f);
+        // 3
+        Assert.Greater(ship.transform.position.y, initialYPosition); // Move up works
+
+
+
+
+        ship.MoveDown();
+        yield return new WaitForSeconds(0.1f);
+        // 3
+        Assert.Less(ship.transform.position.y, initialYPosition); // Move Down works
+    }
+
 
 }
